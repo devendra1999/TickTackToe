@@ -30,9 +30,10 @@ boxes.forEach((box, index) => {
 
     let winner = checkWinCondition();
     if (winner) {
-      alert(`Player ${winner} wins!!!`);
-      resetBoard();
-    }
+      setTimeout(() => {
+        alert(`Player ${winner} wins!!!`);
+        resetBoard();
+      }, 100);
   });
 });
 
