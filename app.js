@@ -50,8 +50,10 @@ const checkWinCondition = () => {
     }
   }
   if (count === 9) {
-    alert("It's a draw!");
-    resetBoard();
+     setTimeout(() => {
+      alert("It's a draw!");
+      resetBoard();
+    }, 100);
   }
 };
 
