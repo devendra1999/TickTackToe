@@ -34,6 +34,7 @@ boxes.forEach((box, index) => {
         alert(`Player ${winner} wins!!!`);
         resetBoard();
       }, 100);
+    }
   });
 });
 
@@ -50,7 +51,7 @@ const checkWinCondition = () => {
     }
   }
   if (count === 9) {
-     setTimeout(() => {
+    setTimeout(() => {
       alert("It's a draw!");
       resetBoard();
     }, 100);
@@ -65,4 +66,3 @@ const resetBoard = () => {
   turn0 = true;
   count = 0;
 };
-
